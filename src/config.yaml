@@ -1,6 +1,6 @@
 site:
   name: ChatLead
-  site: "https://chatlead.netlify.app"
+  site: "https://chatlead.io"
   base: "/"
   trailingSlash: false
 
