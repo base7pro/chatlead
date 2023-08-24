@@ -82,7 +82,7 @@ const {
                     <Fragment set:html={callToAction} />
                   ) : (
                     <a
-                      class="btn btn-primary bg-[#3fb8fe] sm:mb-0 w-full"
+                      class="btn btn-primary bg-[#3fb8fe] sm:mb-0 w-full rounded-md"
                       href={callToAction?.href}
                       target="_blank"
                       rel="noopener"
@@ -107,7 +107,10 @@ const {
                   {typeof callToAction2 === "string" ? (
                     <Fragment set:html={callToAction2} />
                   ) : (
-                    <a class="btn w-full" href={callToAction2?.href}>
+                    <a
+                      class="btn w-full  rounded-md"
+                      href={callToAction2?.href}
+                    >
                       {callToAction2?.icon && (
                         <>
                           <Icon
