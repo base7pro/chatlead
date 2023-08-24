@@ -18,7 +18,28 @@ const { metadata } = Astro.props;
   </Fragment>
   <Fragment slot="header">
     <slot name="header">
-      <Header />
+      <Header
+        actions={[
+          {
+            type: "ghost",
+            text: "Sign Up",
+            href: "https://app.chatlead.io",
+          },
+        ]}
+        position="right"
+      />
+      <!-- <Header
+        links={headerData?.links[2] ? [headerData.links[2]] : undefined}
+        actions={[
+          {
+            type: "ghost",
+            text: "Download",
+            href: "https://github.com/onwidget/astrowind",
+          },
+        ]}
+        showToggleTheme
+        position="right"
+      /> -->
     </slot>
   </Fragment>
   <slot />
