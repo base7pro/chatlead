@@ -25,35 +25,30 @@ const {
 ---
 
 <section class="relative md:-mt-[76px] not-prose">
-  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+  <div class="relative inset-0 pointer-events-none" aria-hidden="true">
     <div
-      class="max-w-6xl mx-auto relative lg:top-40 xl:top-30 2xl:top-20 lg:px-30 px-2 pt-0 md:top-20"
+      class="max-w-6xl mx-auto relative lg:top-30 xl:top-30 2xl:top-20 lg:px-30 lg:pb-20 px-2 pt-0 md:top-[110px] md:pb-0 pb-0"
     >
-      <img
-        src="./images/chatlead.svg"
-        height="400"
-        width="auto"
-        class="mx-auto"
-      />
+      <img src="./images/chatlead.svg" width="auto" class="mx-auto" />
     </div>
   </div>
 
   <div
-    class="relative max-w-7xl mx-auto px-4 sm:px-6 md:pt-20 sm:pt-0 pt-0 md:top-20 sm:top-20 top-0"
+    class="relative max-w-7xl mx-auto px-10 sm:px-6 md:pt-0 sm:pt-0 pt-0 md:top-20 md:pb-20 sm:-top-10 -top-10"
   >
     <div class="lg:pt-[0px] md:pt-[100px] pt-[70px] pointer-events-none"></div>
     <div
-      class="py-12 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8"
+      class="py-0 md:py-0 lg:py-0 lg:flex lg:items-center lg:gap-8 relative md:-top-5"
     >
       <div class="basis-1/2 text-center lg:text-left pb-10 md:pb-16 mx-auto">
-        {
+        <!-- {
           tagline && (
             <p
-              class="mb-2 text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase"
+              class="mb-2 text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase hidden"
               set:html={tagline}
             />
           )
-        }
+        } -->
         {
           title && (
             <h1
@@ -132,7 +127,7 @@ const {
       <div class="basis-1/2">
         {
           image && (
-            <div class="relative m-auto max-w-5xl">
+            <div class="relative m-auto max-w-5xl lg:-top-5">
               {typeof image === "string" ? (
                 <Fragment set:html={image} />
               ) : (
@@ -150,6 +145,7 @@ const {
           )
         }
       </div>
+      <!-- <div class="min-h-[420px]"></div> -->
     </div>
   </div>
 </section>
